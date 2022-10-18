@@ -51,8 +51,7 @@
     "slider": {
       "of": "de",
       "next_slide": "Diapositiva a la derecha",
-      "previous_slide": "Diapositiva a la izquierda",
-      "name": "Carrusel"
+      "previous_slide": "Diapositiva a la izquierda"
     }
   },
   "newsletter": {
@@ -75,8 +74,7 @@
     "skip_to_product_info": "Ir directamente a la información del producto",
     "total_reviews": "reseñas totales",
     "star_reviews_info": "{{ rating_value }} de {{ rating_max }} estrellas",
-    "collapsible_content_title": "Contenido desplegable",
-    "complementary_products": "Productos complementarios"
+    "collapsible_content_title": "Contenido desplegable"
   },
   "blogs": {
     "article": {
@@ -151,9 +149,7 @@
       "include_taxes": "Impuesto incluido.",
       "shipping_policy_html": "Los <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pago.",
       "choose_options": "Seleccionar opciones",
-      "choose_product_options": "Elegir opciones para {{ product_name }}",
-      "value_unavailable": "{{ option_value }} (no disponible)",
-      "variant_sold_out_or_unavailable": "Variante agotada o no disponible"
+      "choose_product_options": "Elegir opciones para {{ product_name }}"
     },
     "modal": {
       "label": "Galería multimedia"
@@ -278,7 +274,8 @@
     },
     "featured_collection": {
       "view_all": "Ver todo",
-      "view_all_label": "Ver todos los productos de la colección {{ collection_name }}"
+      "view_all_label": "Ver todos los productos de la colección {{ collection_name }}",
+      "slider": "Carrusel de imágenes"
     },
     "collection_list": {
       "view_all": "Ver todo"
@@ -388,7 +385,7 @@
     },
     "reset_password": {
       "title": "Restablecer contraseña de cuenta",
-      "subtext": "Introduce una nueva contraseña.",
+      "subtext": "Ingresa una nueva contraseña para {{ email }}",
       "password": "Contraseña",
       "password_confirm": "Confirmar contraseña",
       "submit": "Restablecer contraseña"

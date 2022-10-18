@@ -1,6 +1,9 @@
 .contact img {
   max-width: 100%;
 }
+.section.about #ContactForm{
+  display: block !important;
+}
 
 .contact .form__message {
   align-items: flex-start;
@@ -13,7 +16,174 @@
 .contact .field {
   margin-bottom: 1.5rem;
 }
+/* 14-10-2022 */
+.page_contact .section-template--16082517819577__main-padding {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    text-align: center;
+}
 
+.page_contact .main-page-title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 0.1em;
+    color: #F80D62;
+    text-transform: uppercase;
+}
+
+.page_contact .page-width .rte p {
+    max-width: 1052px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #222222;
+}
+
+.page_contact .rich-text {
+    padding: 0;
+}
+
+.page_contact .rich-text__wrapper {
+    max-width: 1400px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.page_contact .rich-text__blocks {
+    padding: 60px;
+    background-color: rgb(248 13 98 / 10%);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.page_contact .rich-text__blocks .rich-text__heading {
+    justify-content: center;
+    flex-basis: 100%;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+    align-items: center;
+    color: #F80D62;
+    margin-bottom: 30px;
+}
+
+.page_contact .rich-text__blocks .rich-text__text {
+    flex-basis: calc(33.33% - 20px);
+    margin-top: 0;
+    padding: 30px 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.page_contact .section-contact #ContactForm .field textarea{
+  padding-left: 30px;
+}
+
+.page_contact .rich-text__blocks .rich-text__text p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    align-items: center;
+    color: #222222;
+}
+
+.page_contact .rich-text__blocks .rich-text__text p strong {
+    color: #F80D62;
+}
+
+.page_contact .section-contact {
+    padding: 0;
+    max-width: 1400px;
+    margin: 150px auto;
+}
+.page_contact .section-contact .image-with-text__grid {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.page_contact .section-contact .image-with-text__media-item {
+    max-width: 687px;
+}
+
+.page_contact .section-contact .image-with-text__text-item {
+    max-width: 613px;
+}
+.page_contact .section-contact #ContactForm .contact__fields {
+    display: block !important;
+}
+
+.page_contact .section-contact #ContactForm .field {
+    margin-bottom: 40px;
+}
+.page_contact .section-contact #ContactForm .field::before {
+    content: none;
+}
+
+.page_contact .section-contact #ContactForm .field::after {
+    content: none;
+}
+.page_contact .section-contact #ContactForm .field input {
+    padding: 30px;
+}
+.page_contact .section-contact #ContactForm .field input,
+.page_contact .section-contact #ContactForm .field textarea {
+    background-color: rgba(34, 34, 34, 0.05) !important;
+    border: none;
+    box-shadow: none;
+}
+.page_contact .section-contact #ContactForm .field textarea{
+    height: 224px;
+}
+.page_contact .section-contact #ContactForm .field input+label,
+.page_contact .section-contact #ContactForm .field textarea+label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #868686;
+}
+.page_contact .section-contact #ContactForm .contact__button {
+    margin-top: 60px;
+}
+
+.page_contact .section-contact #ContactForm .contact__button button {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #F80D62;
+    background-color: transparent;
+    border: 1px solid #F80D62;
+}
+.page_contact .section-contact #ContactForm .contact__button button::before,
+.page_contact .section-contact #ContactForm .contact__button button::after {
+    content: none !important;
+}
+
+.page_contact .section-contact #ContactForm input:focus + label {
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
+.page_contact .section-contact #ContactForm textarea:focus + label {
+    font-size: 14px !important;
+    line-height: 20px !important;
+}
+.page_contact .section-contact #ContactForm .field input+label{
+  padding-left:10px !important;
+}
+.page_contact .section-contact #ContactForm .field textarea+label{
+  padding-left:10px !important;
+}
 @media screen and (min-width: 750px) {
   .contact .field {
     margin-bottom: 2rem;

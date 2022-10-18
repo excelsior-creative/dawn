@@ -51,8 +51,7 @@
     "slider": {
       "of": "de",
       "next_slide": "Deslizar para a direita",
-      "previous_slide": "Deslizar para a esquerda",
-      "name": "Slider"
+      "previous_slide": "Deslizar para a esquerda"
     }
   },
   "newsletter": {
@@ -75,8 +74,7 @@
     "skip_to_product_info": "Saltar para a informação do produto",
     "total_reviews": "análises totais",
     "star_reviews_info": "{{ rating_value }} de {{ rating_max }} estrelas",
-    "collapsible_content_title": "Conteúdo recolhível",
-    "complementary_products": "Produtos complementares"
+    "collapsible_content_title": "Conteúdo recolhível"
   },
   "blogs": {
     "article": {
@@ -151,9 +149,7 @@
       "include_taxes": "Imposto incluído.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Envio</a> calculado na finalização da compra.",
       "choose_options": "Escolher opções",
-      "choose_product_options": "Escolha opções para {{ product_name }}",
-      "value_unavailable": "{{ option_value }} [Indisponível]",
-      "variant_sold_out_or_unavailable": "Variante esgotada ou indisponível"
+      "choose_product_options": "Escolha opções para {{ product_name }}"
     },
     "modal": {
       "label": "Galeria de conteúdo multimédia"
@@ -278,7 +274,8 @@
     },
     "featured_collection": {
       "view_all": "Ver tudo",
-      "view_all_label": "Ver todos os produtos da coleção {{ collection_name }}"
+      "view_all_label": "Ver todos os produtos da coleção {{ collection_name }}",
+      "slider": "Slider"
     },
     "collection_list": {
       "view_all": "Ver tudo"
@@ -413,7 +410,7 @@
     },
     "reset_password": {
       "title": "Repor palavra-passe da conta",
-      "subtext": "Insira uma nova palavra-passe",
+      "subtext": "Insira uma nova palavra-passe para {{ email }}",
       "password": "Palavra-passe",
       "password_confirm": "Confirmar palavra-passe",
       "submit": "Repor palavra-passe"

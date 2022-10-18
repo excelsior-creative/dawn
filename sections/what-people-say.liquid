@@ -1,0 +1,123 @@
+<div class="page-width">
+  <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
+  {% if section.settings.heading != blank %}
+    <h2 class="title h1">{{ section.settings.heading }} <span> {{ section.settings.heading_2 }} </span></h2>
+  {% endif %}
+  {% if section.settings.discription != blank %}
+    <div class="custom_text">
+    {{ section.settings.discription }}
+    </div>
+  {% endif %}
+  </div>
+  <div class="testimonial_main">
+    {%- for block in section.blocks -%}
+      <div class="single_slide_main">
+        <div class="testimonial_top">
+          {% if block.settings.image != blank %}
+            <img src="{{ block.settings.image | img_url: 'master' }}" />
+          {% endif %}
+          {% if block.settings.name != blank %}
+            <p class="customer_name">{{ block.settings.name }}</p>
+          {% endif %}
+          {% if block.settings.position != blank %}
+            <p class="customer_position">{{ block.settings.position }}</p>
+          {% endif %}
+        </div>
+      {% if block.settings.review_text != blank %}
+        <div class="review_text_text">
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="32" viewBox="0 0 44 32" fill="none">
+              <path d="M34.6549 4.90507e-06C37.294 5.13579e-06 39.5221 0.876115 41.3392 2.62834C43.1131 4.33676 44 6.59275 44 9.39631C44 12.8131 42.5723 16.6242 39.7168 20.8296C36.8181 24.9911 32.9675 28.7146 28.1652 32L26.1534 29.963C28.0138 27.948 29.4848 26.0862 30.5664 24.3778C31.6047 22.7132 32.1239 21.3552 32.1239 20.3039C32.1239 19.4278 31.7778 18.705 31.0855 18.1355C30.8692 17.9165 30.2852 17.3908 29.3333 16.5585C28.3382 15.7262 27.473 14.7406 26.7375 13.6016C26.0885 12.5503 25.764 11.1485 25.764 9.3963C25.764 6.63655 26.586 4.38056 28.2301 2.62834C29.9607 0.876115 32.1023 4.68191e-06 34.6549 4.90507e-06ZM8.89086 2.65271e-06C11.6165 2.89099e-06 13.8446 0.876113 15.5752 2.62834C17.3058 4.38056 18.1711 6.63655 18.1711 9.3963C18.1711 12.9008 16.765 16.7118 13.9528 20.8296C11.0541 24.9911 7.20353 28.7146 2.40118 32L0.389378 29.963C2.24975 27.948 3.72074 26.0862 4.80235 24.3778C5.8407 22.7132 6.35988 21.3552 6.35988 20.3039C6.35988 19.4278 6.01376 18.705 5.32153 18.1355C5.10521 17.9165 4.52114 17.3908 3.56932 16.5585C2.57424 15.7262 1.70894 14.7406 0.973448 13.6016C0.32448 12.5503 -1.9918e-06 11.1485 -1.83862e-06 9.3963C-1.59735e-06 6.63655 0.822024 4.38056 2.46607 2.62834C4.19665 0.876112 6.33825 2.42955e-06 8.89086 2.65271e-06Z" fill="#F80D62"/>
+            </svg>
+          </span>
+          {{ block.settings.review_text }}
+        </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+<script>
+$('.testimonial_main').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 1,
+  arrows: true,
+  prevArrow:'<button class="slick-arrow prev-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="16" viewBox="0 0 46 16" fill="none"><path d="M45 8H1" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 1L1 8L8 15" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button> ',
+  nextArrow:'<button class="slick-arrow next-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="16" viewBox="0 0 46 16" fill="none"><path d="M1 8H45" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 1L45 8L38 15" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button> '
+});
+</script>
+
+{% schema %}
+  {
+    "name": "What People Say",
+    "class": "customer_testimonial",
+    "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Title",
+      "label": "heading"
+    },
+    {
+      "type": "text",
+      "id": "heading_2",
+      "default": "Title",
+      "label": "heading"
+    },
+    {
+      "type": "textarea",
+      "id": "discription",
+      "default": "Multimedia collage",
+      "label": "Text"
+    }
+    ],
+    "blocks": [
+    {
+      "type": "image",
+      "name": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "position",
+          "label": "Position"
+        },
+        {
+          "type": "textarea",
+          "id": "review_text",
+          "label": "Review text" 
+        }
+      ]
+    } 
+  ],
+  "presets": [
+    {
+      "name": "What People Say",
+      "blocks": [
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

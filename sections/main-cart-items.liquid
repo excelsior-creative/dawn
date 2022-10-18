@@ -26,7 +26,10 @@
 <cart-items class="page-width{% if cart == empty %} is-empty{% else %} section-{{ section.id }}-padding{% endif %}">
   <div class="title-wrapper-with-link">
     <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
-    <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
+    <p class="subtitle">{{ section.settings.custom_text }}</p>
+    <div class="button-box">
+      <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
+    </div>
   </div>
 
   <div class="cart__warnings">
@@ -304,6 +307,12 @@
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "textarea",
+      "id": "custom_text",
+      "default": "Text",
+      "label": "Text"
     },
     {
       "type": "range",

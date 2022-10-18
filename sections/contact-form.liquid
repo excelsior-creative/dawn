@@ -16,11 +16,38 @@
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
+    
     {%- if section.settings.heading != blank -%}
       <h2 class="title title-wrapper--no-top-margin {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
     {%- else -%}
       <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
     {%- endif -%}
+    <div class="grid grid--gapless grid--1-col grid--2-col-tablet image-with-text__grid">
+      <div class="grid__item image-with-text__media-item">
+    <div class="media media--transparent ratio"{% if section.settings.cover_image != blank %} style="--ratio-percent: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%"{% else %} style="--ratio-percent: 100%"{% endif %}>
+                      {%- if section.settings.cover_image != blank -%}
+                        <img
+                          srcset="{%- if section.settings.cover_image.width >= 550 -%}{{ section.settings.cover_image | image_url: width: 550 }} 550w,{%- endif -%}
+                            {%- if section.settings.cover_image.width >= 720 -%}{{ section.settings.cover_image | image_url: width: 720 }} 720w,{%- endif -%}
+                            {%- if section.settings.cover_image.width >= 990 -%}{{ section.settings.cover_image | image_url: width: 990 }} 990w,{%- endif -%}
+                            {%- if section.settings.cover_image.width >= 1100 -%}{{ section.settings.cover_image | image_url: width: 1100 }} 1100w,{%- endif -%}
+                            {%- if section.settings.cover_image.width >= 1500 -%}{{ section.settings.cover_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                            {%- if section.settings.cover_image.width >= 2200 -%}{{ section.settings.cover_image | image_url: width: 2200 }} 2200w,{%- endif -%}
+                            {%- if section.settings.cover_image.width >= 3000 -%}{{ section.settings.cover_image | image_url: width: 3000 }} 3000w,{%- endif -%}
+                            {{ section.settings.cover_image | image_url }} {{ section.settings.cover_image.width }}w"
+                          src="{{ section.settings.cover_image | image_url: width: 1500 }}"
+                          sizes="(min-width: {{ settings.page_width }}px) {% if section.blocks.size == 1 %}calc({{ settings.page_width }}px - 100px){% else %}{{ settings.page_width | minus: 100 | times: 0.67 | round }}px{% endif %}, (min-width: 750px){% if section.blocks.size == 1 %} calc(100vw - 100px){% else %} 500px{% endif %}, calc(100vw - 30px)"
+                          alt="{{ section.settings.description | escape }}"
+                          loading="lazy"
+                          width="{{ section.settings.cover_image.width }}"
+                          height="{{ section.settings.cover_image.height }}"
+                        >
+                      {%- else -%}
+                        {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                      {%- endif -%}
+                    </div>
+      </div>
+      <div class="grid__item image-with-text__text-item">
     {%- form 'contact', id: 'ContactForm', class: 'isolate' -%}
       {%- if form.posted_successfully? -%}
         <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</h2>
@@ -38,8 +65,12 @@
       {%- endif -%}
       <div class="contact__fields">
         <div class="field">
-          <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
-          <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+          <input class="field__input" autocomplete="firstname" type="text" id="ContactForm-fname" name="contact[First Name]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="First Name">
+          <label class="field__label" for="ContactForm-fname">First Name</label>
+        </div>
+      <div class="field">
+          <input class="field__input" autocomplete="name" type="text" id="ContactForm-lname" name="contact[Last Name]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="Last Name">
+          <label class="field__label" for="ContactForm-lname">Last Name</label>
         </div>
         <div class="field field--with-error">
           <input
@@ -89,6 +120,8 @@
         </button>
       </div>
     {%- endform -%}
+      </div>
+    </div>
   </div>
 </div>
 
@@ -96,8 +129,13 @@
 {
   "name": "t:sections.contact-form.name",
   "tag": "section",
-  "class": "section",
+  "class": "section-contact",
   "settings": [
+    {
+          "type": "image_picker",
+          "id": "cover_image",
+          "label": "cover image"
+    },
     {
       "type": "text",
       "id": "heading",

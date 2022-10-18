@@ -1,0 +1,72 @@
+<div class="page-width two_image_text">
+  <div class="main_box">
+    <div class="left_side_text">
+      {% if section.settings.heading != blank %}
+        <h2 class="title">{{ section.settings.heading }}</h2>
+      {% endif %}
+      {% if section.settings.custom_text != blank %}
+        <div class="custom_text">{{ section.settings.custom_text }}</div>
+      {% endif %}
+      <a href="javascript:void(0)" class="button">SHOP NOW</a>
+    </div>
+    <div class="right_side_image">
+      <div class="images_main">
+        {% if section.settings.custom_image != blank %}
+          <div class="first_image">
+            <img src="{{ section.settings.custom_image | img_url: 'master' }}" alt="{{ section.settings.custom_image.alt }}"/>
+          </div>
+        {% endif %}
+        {% if section.settings.custom_image_1 != blank %}
+          <div class="last_image">
+            <img src="{{ section.settings.custom_image_1 | img_url: 'master' }}" alt="{{ section.settings.custom_image_1.alt }}"/>
+          </div>
+        {% endif %}
+      </div>
+    </div> 
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "image with content",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "Multimedia collage",
+        "label": "heading text"
+      },
+      {
+        "type": "textarea",
+        "id": "custom_text",
+        "default": "Multimedia collage",
+        "label": "text"
+      },
+      {
+        "type": "image_picker",
+        "id": "custom_image",
+        "label": "First image"
+      },
+      {
+        "type": "image_picker",
+        "id": "custom_image_1",
+        "label": "Second image"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button text"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Multiple image with text"
+      }
+   ]
+  }
+{% endschema %}

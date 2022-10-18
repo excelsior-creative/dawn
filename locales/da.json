@@ -51,8 +51,7 @@
     "slider": {
       "of": "af",
       "next_slide": "Skub til højre",
-      "previous_slide": "Skub til venstre",
-      "name": "Diasshow"
+      "previous_slide": "Skub til venstre"
     }
   },
   "newsletter": {
@@ -75,8 +74,7 @@
     "skip_to_product_info": "Gå til produktoplysninger",
     "total_reviews": "anmeldelser i alt",
     "star_reviews_info": "{{ rating_value }} ud af {{ rating_max }} stjerner",
-    "collapsible_content_title": "Indhold, der kan skjules",
-    "complementary_products": "Supplerende produkter"
+    "collapsible_content_title": "Indhold, der kan skjules"
   },
   "blogs": {
     "article": {
@@ -150,9 +148,7 @@
       "include_taxes": "Inklusive skat.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Levering</a> beregnes ved betaling.",
       "choose_options": "Vælg muligheder",
-      "choose_product_options": "Vælg muligheder for {{ product_name }}",
-      "value_unavailable": "{{ option_value }} [Utilgængelig]",
-      "variant_sold_out_or_unavailable": "Varianten er udsolgt eller utilgængelig"
+      "choose_product_options": "Vælg muligheder for {{ product_name }}"
     },
     "modal": {
       "label": "Mediegalleri"
@@ -271,7 +267,8 @@
     },
     "featured_collection": {
       "view_all": "Se alle",
-      "view_all_label": "Se alle produkter i kollektionen {{ collection_name }}"
+      "view_all_label": "Se alle produkter i kollektionen {{ collection_name }}",
+      "slider": "Diasshow"
     },
     "collection_list": {
       "view_all": "Se alle"
@@ -381,7 +378,7 @@
     },
     "reset_password": {
       "title": "Forny adgangskode til konto",
-      "subtext": "Indtast en ny adgangskode",
+      "subtext": "Indtast en ny adgangskode for {{ email }}",
       "password": "Adgangskode",
       "password_confirm": "Bekræft adgangskode",
       "submit": "Nulstil adgangskode"

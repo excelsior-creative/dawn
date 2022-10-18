@@ -51,8 +51,7 @@
     "slider": {
       "of": "od",
       "next_slide": "Klizno pomakni udesno",
-      "previous_slide": "Klizno pomakni ulijevo",
-      "name": "Kliznik"
+      "previous_slide": "Klizno pomakni ulijevo"
     }
   },
   "newsletter": {
@@ -75,8 +74,7 @@
     "skip_to_product_info": "Preskoči do informacija o proizvodu",
     "total_reviews": "ukupan broj pregleda",
     "star_reviews_info": "{{ rating_value }} od sljedećeg broja zvjezdica: {{ rating_max }}",
-    "collapsible_content_title": "Sadržaj koji se može sažeti",
-    "complementary_products": "Komplementarni proizvodi"
+    "collapsible_content_title": "Sadržaj koji se može sažeti"
   },
   "blogs": {
     "article": {
@@ -151,9 +149,7 @@
       "include_taxes": "Porez je uključen.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Poštarina </a> se obračunava prilikom završetka kupnje.",
       "choose_options": "Odaberite opcije",
-      "choose_product_options": "Odaberite željene opcije za {{ product_name }}",
-      "value_unavailable": "{{ option_value }} [Nedostupno]",
-      "variant_sold_out_or_unavailable": "Model je prodan ili nedostupan"
+      "choose_product_options": "Odaberite željene opcije za {{ product_name }}"
     },
     "modal": {
       "label": "Galerija medijskih zapisa"
@@ -278,7 +274,8 @@
     },
     "featured_collection": {
       "view_all": "Prikaži sve",
-      "view_all_label": "Prikaži sve proizvode iz kolekcije {{ collection_name }}"
+      "view_all_label": "Prikaži sve proizvode iz kolekcije {{ collection_name }}",
+      "slider": "Kliznik"
     },
     "collection_list": {
       "view_all": "Prikaži sve"
@@ -388,7 +385,7 @@
     },
     "reset_password": {
       "title": "Ponovno postavljanje lozinke računa",
-      "subtext": "Unesite novu lozinku",
+      "subtext": "Unesite novu lozinku za {{ email }}",
       "password": "Lozinka",
       "password_confirm": "Potvrdi lozinku",
       "submit": "Ponovno postavi lozinku"

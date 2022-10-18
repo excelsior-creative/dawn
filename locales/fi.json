@@ -51,8 +51,7 @@
     "slider": {
       "of": "/",
       "next_slide": "Liu'uta oikealle",
-      "previous_slide": "Liu'uta vasemmalle",
-      "name": "Liukusäädin"
+      "previous_slide": "Liu'uta vasemmalle"
     }
   },
   "newsletter": {
@@ -75,8 +74,7 @@
     "skip_to_product_info": "Siirry tuotetietoihin",
     "total_reviews": "arvosteluja yhteensä",
     "star_reviews_info": "{{ rating_value }}/{{ rating_max }} tähteä",
-    "collapsible_content_title": "Pienenettävä sisältö",
-    "complementary_products": "Täydentävät tuotteet"
+    "collapsible_content_title": "Pienenettävä sisältö"
   },
   "blogs": {
     "article": {
@@ -150,9 +148,7 @@
       "include_taxes": "Sisältää veron.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Toimituskulut</a> lasketaan kassalla.",
       "choose_options": "Valitse vaihtoehdot",
-      "choose_product_options": "Valitse vaihtoehtoja tuotteelle {{ product_name }}",
-      "value_unavailable": "{{ option_value }} [ei saatavilla]",
-      "variant_sold_out_or_unavailable": "Versio on loppuunmyyty tai ei saatavilla"
+      "choose_product_options": "Valitse vaihtoehtoja tuotteelle {{ product_name }}"
     },
     "modal": {
       "label": "Mediagalleria"
@@ -271,7 +267,8 @@
     },
     "featured_collection": {
       "view_all": "Näytä kaikki",
-      "view_all_label": "Näytä kaikki tuotteet kokoelmassa {{ collection_name }}"
+      "view_all_label": "Näytä kaikki tuotteet kokoelmassa {{ collection_name }}",
+      "slider": "Liukusäädin"
     },
     "collection_list": {
       "view_all": "Näytä kaikki"
@@ -381,7 +378,7 @@
     },
     "reset_password": {
       "title": "Palauta tilin salasana",
-      "subtext": "Syötä uusi salasana",
+      "subtext": "Anna uusi salasana tilille {{ email }}",
       "password": "Salasana",
       "password_confirm": "Vahvista salasana",
       "submit": "Nollaa salasana"

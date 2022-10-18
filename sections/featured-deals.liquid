@@ -1,0 +1,76 @@
+<div class="page-width">
+  <div class="title-wrapper">
+    <h2 class="title h1">{{ section.settings.color_label }} <span>{{ section.settings.title }}</span></h2>
+  </div>
+  <div class="main-row">
+    {%- for block in section.blocks -%}
+      {% if block.settings.image != blank %}
+        <div class="image_main">
+          <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image }}"/>
+          <div class="image-overlay">
+            <a href="{{ block.settings.button_link }}" title="{{ block.settings.button_label }}">{{ block.settings.button_label }}</a>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Featured Deals",
+    "class": "featured_deals",
+    "settings": [
+      {
+        "type": "text",
+        "id": "color_label",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "text"
+      }
+    ],
+    "blocks": [
+    {
+      "type": "images",
+      "name": "images",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Select the image"
+        },
+        {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button text"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      }
+      ]
+     }
+   ],
+   "presets": [
+    {
+      "name": "image button overlay",
+      "blocks": [
+        {
+          "type": "images"
+        }
+      ]
+    }
+  ] 
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

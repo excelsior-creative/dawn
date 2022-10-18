@@ -51,8 +51,7 @@
     "slider": {
       "of": "av",
       "next_slide": "Bild till höger",
-      "previous_slide": "Bild till vänster",
-      "name": "Bild"
+      "previous_slide": "Bild till vänster"
     }
   },
   "newsletter": {
@@ -75,8 +74,7 @@
     "skip_to_product_info": "Gå vidare till produktinformation",
     "total_reviews": "totalt antal recensioner",
     "star_reviews_info": "{{ rating_value }} av {{ rating_max }} stjärnor",
-    "collapsible_content_title": "Innehåll som kan döljas",
-    "complementary_products": "Kompletterande produkter"
+    "collapsible_content_title": "Innehåll som kan döljas"
   },
   "blogs": {
     "article": {
@@ -150,9 +148,7 @@
       "include_taxes": "Skatt ingår.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Frakt</a> beräknas i kassan.",
       "choose_options": "Välj alternativ",
-      "choose_product_options": "Välj alternativ för {{ product_name }}",
-      "value_unavailable": "{{ option_value }} [Inte tillgänglig]",
-      "variant_sold_out_or_unavailable": "Varianten är slutsåld eller inte tillgänglig"
+      "choose_product_options": "Välj alternativ för {{ product_name }}"
     },
     "modal": {
       "label": "Mediagalleri"
@@ -271,7 +267,8 @@
     },
     "featured_collection": {
       "view_all": "Visa alla",
-      "view_all_label": "Visa alla produkter i produktserien {{ collection_name }}"
+      "view_all_label": "Visa alla produkter i produktserien {{ collection_name }}",
+      "slider": "Bild"
     },
     "collection_list": {
       "view_all": "Visa alla"
@@ -381,7 +378,7 @@
     },
     "reset_password": {
       "title": "Återställ kontolösenord",
-      "subtext": "Ange ett nytt lösenord",
+      "subtext": "Ange ett nytt lösenord för {{ email }}",
       "password": "Lösenord",
       "password_confirm": "Bekräfta lösenordet",
       "submit": "Återställ lösenord"

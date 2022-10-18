@@ -51,8 +51,7 @@
     "slider": {
       "of": "z",
       "next_slide": "Snímek vpravo",
-      "previous_slide": "Snímek vlevo",
-      "name": "Posuvník"
+      "previous_slide": "Snímek vlevo"
     }
   },
   "newsletter": {
@@ -75,8 +74,7 @@
     "skip_to_product_info": "Přejít na informace o produktu",
     "total_reviews": "celkový počet recenzí",
     "star_reviews_info": "{{ rating_value }} z {{ rating_max }} hvězdiček",
-    "collapsible_content_title": "Sbalitelný obsah",
-    "complementary_products": "Doplňkové produkty"
+    "collapsible_content_title": "Sbalitelný obsah"
   },
   "blogs": {
     "article": {
@@ -152,9 +150,7 @@
       "include_taxes": "Včetně daní.",
       "shipping_policy_html": "<a href=\"{{ link }}\">Poštovné</a> se vypočítá na pokladně.",
       "choose_options": "Výběr možností",
-      "choose_product_options": "Zvolte možnosti pro: {{ product_name }}",
-      "value_unavailable": "{{ option_value }} [nedostupné]",
-      "variant_sold_out_or_unavailable": "Vyprodaná nebo nedostupná varianta"
+      "choose_product_options": "Zvolte možnosti pro: {{ product_name }}"
     },
     "modal": {
       "label": "Galerie multimédií"
@@ -285,7 +281,8 @@
     },
     "featured_collection": {
       "view_all": "Zobrazit vše",
-      "view_all_label": "Zobrazit všechny produkty v kolekci {{ collection_name }}"
+      "view_all_label": "Zobrazit všechny produkty v kolekci {{ collection_name }}",
+      "slider": "Posuvník"
     },
     "collection_list": {
       "view_all": "Zobrazit vše"
@@ -395,7 +392,7 @@
     },
     "reset_password": {
       "title": "Resetujte heslo účtu",
-      "subtext": "Zadejte nové heslo",
+      "subtext": "Zadejte nové heslo pro {{ email }}",
       "password": "Heslo",
       "password_confirm": "Potvrdit heslo",
       "submit": "Resetovat heslo"

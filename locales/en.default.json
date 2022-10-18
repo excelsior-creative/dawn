@@ -51,8 +51,7 @@
     "slider": {
       "of": "of",
       "next_slide": "Slide right",
-      "previous_slide": "Slide left",
-      "name": "Slider"
+      "previous_slide": "Slide left"
     }
   },
   "newsletter": {
@@ -75,8 +74,7 @@
     "loading": "Loading...",
     "total_reviews": "total reviews",
     "star_reviews_info": "{{ rating_value }} out of {{ rating_max }} stars",
-    "collapsible_content_title": "Collapsible content",
-    "complementary_products": "Complementary products"
+    "collapsible_content_title": "Collapsible content"
   },
   "blogs": {
     "article": {
@@ -145,8 +143,6 @@
       "sold_out": "Sold out",
       "unavailable": "Unavailable",
       "vendor": "Vendor",
-      "value_unavailable": "{{ option_value }} [Unavailable]",
-      "variant_sold_out_or_unavailable": "Variant sold out or unavailable",
       "video_exit_message": "{{ title }} opens full screen video in same window.",
       "view_full_details": "View full details",
       "xr_button": "View in your space",
@@ -271,7 +267,8 @@
     },
     "featured_collection": {
       "view_all": "View all",
-      "view_all_label": "View all products in the {{ collection_name }} collection"
+      "view_all_label": "View all products in the {{ collection_name }} collection",
+      "slider": "Slider"
     },
     "collection_list": {
       "view_all": "View all"
@@ -406,7 +403,7 @@
     },
     "reset_password": {
       "title": "Reset account password",
-      "subtext": "Enter a new password",
+      "subtext": "Enter a new password for {{ email }}",
       "password": "Password",
       "password_confirm": "Confirm password",
       "submit": "Reset password"

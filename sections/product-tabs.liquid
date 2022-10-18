@@ -1,0 +1,85 @@
+<div class="page-width">
+  <div class="tabs">
+  <ul class="tabs-nav">
+    {%- for block in section.blocks -%}
+      {% assign collection = block.settings.collections %}
+        <li><a href="#tab-{{ forloop.index }}">{{ collection.title }}</a></li>
+      {% endfor %}
+  </ul>
+  <div class="tabs-stage">
+    {%- for block in section.blocks -%}
+      <div id="tab-{{ forloop.index }}">
+      <ul id="Slider-{{ block.id }}" class="grid product-grid contains-card{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--4-col-desktop grid--2-col-tablet-down" role="list" aria-label="{{ 'sections.featured_collection.slider' | t }}">
+       {% assign collection = block.settings.collections %}
+        {%- for product in collection.products limit: 4 -%}
+          <li id="Slide-{{ block.id }}-{{ forloop.index }}" class="grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}">
+            {% render 'card-product',
+              card_product: product,
+              media_aspect_ratio: block.settings.image_ratio,
+              show_secondary_image: block.settings.show_secondary_image,
+              show_vendor: block.settings.show_vendor,
+              show_rating: block.settings.show_rating,
+              show_quick_add: block.settings.enable_quick_add,
+              section_id: block.id
+            %}
+          </li>
+        {% endfor %}
+       </ul>
+    </div>  
+    {% endfor %}
+  </div>
+</div>
+</div>
+
+<script>
+$('.tabs-stage div').hide();
+$('.tabs-stage div:first').show();
+$('.tabs-nav li:first').addClass('tab-active');
+
+// Change tab class and display content
+$('.tabs-nav a').on('click', function(event){
+  event.preventDefault();
+  $('.tabs-nav li').removeClass('tab-active');
+  $(this).parent().addClass('tab-active');
+  $('.tabs-stage div').hide();
+  $($(this).attr('href')).show();
+});
+</script>
+{% schema %}
+  {
+    "name": "product with tabs",
+    "class": "product_tabs",
+    "settings": [
+      
+    ],
+    "blocks": [
+    {
+      "type": "tabs",
+      "name": "collecction tabs",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collections",
+          "label": "Select the Collection"
+        }
+      ]
+     }
+   ],
+   "presets": [
+    {
+      "name": "product tabs",
+      "blocks": [
+        {
+          "type": "tabs"
+        }
+      ]
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
