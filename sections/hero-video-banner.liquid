@@ -1,0 +1,88 @@
+<div id="{{ section.id }}" class="video-main">
+<iframe src="https://player.vimeo.com/video/76979871?autoplay=1&loop=1&autopause=0&muted=1&controls=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<div class="content_of_video">
+  {% if section.settings.sub_heading != blank %}
+  <h2 class="banner__heading h1">{{ section.settings.sub_heading }}</h2>
+  {% endif %}
+  {% if section.settings.heading != blank %}
+  <div class="banner__text body">{{ section.settings.heading }}</div>
+  {% endif %}
+  <div class="banner__buttons">
+    {% if section.settings.button_text != blank %}
+      <a href="{% if section.settings.button_link != blank %}{{ section.settings.button_link }}{% else %}#{% endif %}" class="button button--secondary">{{ section.settings.button_text }}</a>
+    {% endif %}
+  </div>
+</div>
+</div>
+
+
+<div class="content_of_video mobile">
+  {% if section.settings.sub_heading != blank %}
+  <h2 class="banner__heading h1">{{ section.settings.sub_heading }}</h2>
+  {% endif %}
+  {% if section.settings.heading != blank %}
+  <div class="banner__text body">{{ section.settings.heading }}</div>
+  {% endif %}
+  <div class="banner__buttons">
+    {% if section.settings.button_text != blank %}
+      <a href="{% if section.settings.button_link != blank %}{{ section.settings.button_link }}{% else %}#{% endif %}" class="button button--secondary">{{ section.settings.button_text }}</a>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "main video banner",
+  "tag": "section",
+  "class": "main-hero-video",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Sub Heading",
+      "id": "sub_heading",
+      "default": "WELCOvvME TO THE",
+      "placeholder": "WELCOvvME TO THE"
+    },
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading",
+      "default": "ADULTFANSHOP",
+      "placeholder": "ADULTFANSHOP"
+    },
+    {
+      "type": "text",
+      "label": "Button text",
+      "id": "button_text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "label": "Button Link",
+      "id": "button_link"
+    },
+    {
+      "type": "video_url",
+      "label": "video link",
+      "id": "video_link",
+      "accept": [
+        "youtube",
+        "vimeo"
+      ]
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Hero video banner"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

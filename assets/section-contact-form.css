@@ -22,6 +22,10 @@
     padding-bottom: 100px;
     text-align: center;
 }
+.section-template--16082517819577__form-padding {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
 
 .page_contact .main-page-title {
     margin-bottom: 20px;
@@ -183,6 +187,103 @@
 }
 .page_contact .section-contact #ContactForm .field textarea+label{
   padding-left:10px !important;
+}
+@media screen and (max-width: 1400px){
+  .page_contact .section-template--16082517819577__main-padding{
+    padding-top: 100px;
+  }
+  .page_contact .section-contact{
+    margin: 100px auto;
+  }
+  .page_contact .section-contact .image-with-text__grid{
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .page_contact .section-contact .image-with-text__media-item{
+    max-width: calc(50% - 10px);
+    padding: 0 20px;
+  }
+  .page_contact .section-contact .image-with-text__text-item {
+    max-width: calc(50% - 10px);
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1200px){
+  .page_contact .rich-text__blocks .rich-text__text{
+    padding: 15px 0;
+  }
+  .page_contact .rich-text__blocks .rich-text__text p{
+    line-height: 28px;
+  }
+  .page_contact .rich-text__blocks .rich-text__text p strong{
+    display: block;
+  }
+  .page_contact .section-contact #ContactForm .field{
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 989px){
+  .page_contact .section-contact #ContactForm .field input {
+    padding: 20px;
+  }
+  .page_contact .section-contact #ContactForm .field input+label,
+  .page_contact .section-contact #ContactForm .field textarea+label{
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .page_contact .section-contact #ContactForm input:focus + label,
+  .page_contact .section-contact #ContactForm textarea:focus + label{
+    font-size: 12px!important;
+    line-height: 8px!important;
+  }
+}
+@media screen and (max-width: 768px){
+  .page_contact .contact{
+    padding: 0;
+  }
+  .page_contact .rich-text__blocks .rich-text__text p{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px){
+  .page_contact .section-template--16082517819577__main-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .page_contact .main-page-title{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .page_contact .rich-text__blocks .rich-text__heading{
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+  .page_contact .section-contact .image-with-text__media-item,
+  .page_contact .section-contact .image-with-text__text-item {
+    max-width: 100%;
+    width: 100%;
+  }
+  .page_contact .section-contact .image-with-text__media-item .media{
+    --ratio-percent: 62.289665% !important;
+  }
+  .page_contact .section-contact .image-with-text__media-item .media img{
+    object-fit: cover;
+    object-position: top;
+  }
+  .page_contact .section-contact .image-with-text__grid{
+    row-gap: 30px;
+  }
+  .page_contact .section-contact {
+    margin: 60px auto;
+  }
+  .page_contact .rich-text__blocks{
+    padding: 40px 20px;
+    gap: 20px;
+  }
+  .page_contact .rich-text__blocks .rich-text__text{
+    flex-basis: 100%;
+  }
 }
 @media screen and (min-width: 750px) {
   .contact .field {
