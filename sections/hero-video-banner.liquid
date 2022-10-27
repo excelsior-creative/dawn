@@ -1,6 +1,10 @@
 <div id="{{ section.id }}" class="video-main">
 <iframe src=" https://vimeo.com/761166112/144730fe69?autoplay=1&loop=1&autopause=0&muted=1&controls=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<iframe src="https://player.vimeo.com/video/761166112??autoplay=1&loop=1&autopause=0&muted=1&controls=0" width="{video_width}" height="{video_height}" frameborder="0" title="{video_title}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<video id="my-video" class="video-js" controls preload="auto" poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" data-setup='' loop>
+<source src="" type='video/mp4'>
+</video>
+
+   <iframe src="https://vimeo.com/761166112/144730fe69" width="500" height="500" frameborder="0" title="{video_title}" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <div class="content_of_video">
   {% if section.settings.sub_heading != blank %}
   <h2 class="banner__heading h1">{{ section.settings.sub_heading }}</h2>
