@@ -513,9 +513,7 @@
         </a>
       {%- endif -%}              
     </div>
-  </header>
 
-                    
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
         <nav class="header__inline-menu">
@@ -615,7 +613,11 @@
           </ul>
         </nav>
       {%- endif -%}
-    {%- endif -%}
+    {%- endif -%}                
+  </header>
+
+                    
+    
 
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
