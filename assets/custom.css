@@ -262,8 +262,8 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, body{
 }
 
 header .header__icons .header__search, header .header__icons .header__icon--cart,  header .header__icons .header__icon--account, header .header__icons .header__icon{
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
 }
 
 header .header__icons .header__icon--cart, header .header__icons .header__icon--account{
@@ -1729,8 +1729,8 @@ body.product section.page-width div.product div.product__media-wrapper .product_
   }
 
   header .header__icons .header__search, header .header__icons .header__icon--cart, header .header__icons .header__icon--account, header .header__icons .header__icon{
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
   }
 
   .collage.collage--mobile .collage-card a{
