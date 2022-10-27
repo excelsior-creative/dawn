@@ -268,7 +268,7 @@ header .header__icons .header__search, header .header__icons .header__icon--cart
 
 header .header__icons .header__icon--cart, header .header__icons .header__icon--account{
   margin-right: 0px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .header__inline-menu{
