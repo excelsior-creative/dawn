@@ -1,6 +1,6 @@
 <div id="{{ section.id }}" class="video-main">
 <iframe src=" https://vimeo.com/761166112/144730fe69?autoplay=1&loop=1&autopause=0&muted=1&controls=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<video id="my-video" class="video-js" controls preload="auto" autoplay="autoplay" muted loop>
+<video id="my-video" class="video-js" preload="auto" autoplay="autoplay" muted loop>
 <source src="https://cdn.shopify.com/videos/c/o/v/55322264416b4419b6a619221cd9f2f6.mp4" type='video/mp4'>
 </video>
 
@@ -34,7 +34,12 @@
     {% endif %}
   </div>
 </div>
-
+<style>
+.main-hero-video .video-main video#my-video {
+    width: 100%;
+    height: 100%;
+}
+</style>
 {% schema %}
 {
   "name": "main video banner",
