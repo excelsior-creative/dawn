@@ -960,11 +960,56 @@ footer.footer .footer-block__details-content .list-social .list-social__item{
   margin-right: 30px;
 }
 
+.header__inline-menu .list-menu{
+  justify-content: space-around;
+}
+
 
 @media (min-width: 1400px){
   .shopify-section .banner--medium:not(.banner--adapt){
     min-height: 80rem;
   }
+}
+
+
+@media screen and (max-width: 1400px) and (min-width: 1100px){
+    .header__menu-item span{
+    padding: 15px 5px !important;
+    font-size: 16px !important;
+   }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 990px){
+  .header__heading, .header__heading-link{
+    width: 180px;
+    box-sizing: border-box;
+  }
+
+  .header__heading svg, .header__heading-link svg{
+    width: 165px;
+  }
+
+  header .header__icons .header__icon--cart, header .header__icons .header__icon--account{
+    margin-left: 25px !important;
+  }
+
+  .cart-count-bubble{
+    left: 1.5rem;
+  }
+
+  .header:not(.header--middle-left) .header__inline-menu .page-width{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .header--top-left, .header--middle-left:not(.header--has-menu){
+    grid-template-columns: 180px auto 130px !important;
+  }
+
+  .header__menu-item span{
+    padding: 15px 5px !important;
+    font-size: 14px;
+   }
 }
 
 @media screen and (min-width: 990px){
