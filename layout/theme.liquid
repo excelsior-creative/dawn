@@ -220,8 +220,8 @@
     }
     </script>
   <script rel="preload" src="{{ 'jquery.min.js' | asset_url }}" as="script"></script>
-  <script src="{{ 'magnific-popup.js' | asset_url }}"></script>
-  <script src="{{ 'slick.js' | asset_url }}"></script>
+  <script rel="preload" src="{{ 'magnific-popup.js' | asset_url }}" as="script"></script>
+  <script rel="preload" src="{{ 'slick.js' | asset_url }}" as="script"></script>
   </head>
 
   <body class="gradient {{ template | replace: '.', '_'}}">
