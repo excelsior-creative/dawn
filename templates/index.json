@@ -153,8 +153,8 @@
       "settings": {
         "heading": "lorem ipsum dolor",
         "custom_text": "With Code: <span class=\"pink_color\">#000000<\/span>",
-        "custom_image": "shopify:\/\/shop_images\/Mask_group_4.png",
-        "custom_image_1": "shopify:\/\/shop_images\/Mask_group_5.png",
+        "custom_image": "shopify:\/\/shop_images\/Mask_group_4_1ed7db84-96ec-479f-bca8-b4d8808a18f3.png",
+        "custom_image_1": "shopify:\/\/shop_images\/Mask_group_5_6f8b57ff-7a76-496f-a876-d0cfc2b929bd.png",
         "button_label": "SHOP NOW",
         "button_link": "#"
       }
@@ -165,7 +165,7 @@
         "template--16082517754041__c34aca86-0f4a-4729-9679-e86c5b0a59b4-1665135512668f3e4e-0": {
           "type": "images",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mask_group_7.png",
+            "image": "shopify:\/\/shop_images\/Mask_group_7_1bd221e3-1d9e-4f6b-815d-d3fa34103dad.png",
             "button_label": "SEXY WEAR",
             "button_link": "#"
           }
@@ -173,7 +173,7 @@
         "56282ca0-edaf-435b-a3a3-4891b52bb2e7": {
           "type": "images",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Group_17.png",
+            "image": "shopify:\/\/shop_images\/Group_17_cbb8fc26-b754-48b9-bdd7-6ae88328f4c6.png",
             "button_label": "SEXY WEAR",
             "button_link": "#"
           }
