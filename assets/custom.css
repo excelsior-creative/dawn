@@ -908,6 +908,10 @@ body.collection .facets-vertical-form{
   margin-bottom: 30px;
 }
 
+body.collection .facets-vertical .active-facets{
+  margin-bottom: 15px;
+}
+
 .customer_testimonial .testimonial_main span.icon svg{
   float: left;
   width: 100%;
