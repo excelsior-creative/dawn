@@ -2233,7 +2233,8 @@ body.product section.page-width div.product div.product__media-wrapper .product_
   }
 
   footer.footer .footer__content-top .footer__blocks-wrapper .footer-block.grid__item.footer-block--menu{
-    width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .header-wrapper .header{
