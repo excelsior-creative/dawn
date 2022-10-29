@@ -870,6 +870,11 @@ header .header__icons .header__icon--cart, header .header__icons .header__icon--
   left: 0px;
 }
 
+.featured-collection .product-grid .slick-arrow.prev-arrow, .featured-collection .product-grid .slick-arrow.next{
+  bottom: 0px;
+  top: 50%;
+}
+
 .customer_testimonial .testimonial_main span.icon{
   display: table;
   margin: 0 auto;
