@@ -870,7 +870,7 @@ header .header__icons .header__icon--cart, header .header__icons .header__icon--
   left: 0px;
 }
 
-.featured-collection .product-grid .slick-arrow.prev-arrow, .featured-collection .product-grid .slick-arrow.next{
+.featured-collection .product-grid .slick-arrow.prev-arrow, .featured-collection .product-grid .slick-arrow.next-arrow{
   bottom: 0px;
   top: 50%;
 }
