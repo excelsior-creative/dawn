@@ -859,6 +859,7 @@ header .header__icons .header__icon--cart, header .header__icons .header__icon--
   bottom: 150px;
   border-width: 0px;
   border-color: transparent;
+  z-index: 1;
 }
 
 .customer_testimonial .testimonial_main .slick-arrow.next-arrow, .featured-collection .product-grid .slick-arrow.next-arrow{
