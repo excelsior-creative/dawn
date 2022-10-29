@@ -871,8 +871,9 @@ header .header__icons .header__icon--cart, header .header__icons .header__icon--
 }
 
 .featured-collection .product-grid .slick-arrow.prev-arrow, .featured-collection .product-grid .slick-arrow.next-arrow{
-  bottom: 0px;
+  bottom: auto;
   top: 50%;
+  transform: translateY(-50%);
 }
 
 .customer_testimonial .testimonial_main span.icon{
