@@ -853,7 +853,7 @@ header .header__icons .header__icon--cart, header .header__icons .header__icon--
   color: #222222;
 }
 
-.customer_testimonial .testimonial_main .slick-arrow{
+.customer_testimonial .testimonial_main .slick-arrow, .featured-collection .product-grid .slick-arrow{
   background: transparent;
   position: absolute;
   bottom: 150px;
@@ -861,11 +861,11 @@ header .header__icons .header__icon--cart, header .header__icons .header__icon--
   border-color: transparent;
 }
 
-.customer_testimonial .testimonial_main .slick-arrow.next-arrow{
+.customer_testimonial .testimonial_main .slick-arrow.next-arrow, .featured-collection .product-grid .slick-arrow.next-arrow{
   right: 0px;
 }
 
-.customer_testimonial .testimonial_main .slick-arrow.prev-arrow{
+.customer_testimonial .testimonial_main .slick-arrow.prev-arrow, .featured-collection .product-grid .slick-arrow.prev-arrow{
   left: 0px;
 }
 
