@@ -1694,16 +1694,21 @@ body.product section.page-width div.product div.product__media-wrapper .product_
   .customer_testimonial .testimonial_main .review_text_text{
     margin: 0 auto 30px;
   }
-  .customer_testimonial .testimonial_main .slick-arrow.prev-arrow {
+  .customer_testimonial .testimonial_main .slick-arrow.prev-arrow, .featured-collection .product-grid .slick-arrow.prev-arrow{
     left: 49%;
     top: calc(100% + 15px);
     transform: translateX(-60px);
 }
-  .customer_testimonial .testimonial_main .slick-arrow.next-arrow {
+  .customer_testimonial .testimonial_main .slick-arrow.next-arrow, .featured-collection .product-grid .slick-arrow.next-arrow{
     right: 49%;
     top: calc(100% + 15px);
     transform: translateX(60px);
 }
+
+  .featured-collection .product-grid .slick-arrow{
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 @media (max-width:1600px) and (min-width:1200px){
   body.product section.page-width .product>div.product__media-wrapper {
