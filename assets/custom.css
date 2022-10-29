@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, body{
   position: relative;
   width: 100%;
   display: block;
-  padding-top: 56.3%;
+  padding-top: 45%;
 }
 .main-hero-video .content_of_video{
   position: absolute;
@@ -61,6 +61,11 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, body{
   background-color: #fff3;
   text-align: center;
   z-index: 1;
+}
+
+.main-hero-video .video-main video#my-video{
+  object-fit: cover;
+  object-position: center center;
 }
 
 .main-hero-video .content_of_video.mobile{
