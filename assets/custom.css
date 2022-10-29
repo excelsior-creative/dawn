@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, body{
 }
 
 .card--card, .card--standard .card__inner{
-  background: rgba(248, 13, 98, 0.1) !important;
+  background: rgba(180, 5, 30, 0.1) !important;
   border: 1px solid #b4051e !important;
 }
 
