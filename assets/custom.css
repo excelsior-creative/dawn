@@ -101,6 +101,7 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, body{
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
+  font-size: 20px;
 }
 
 .collage .collage-card a.full-unstyled-link span{
