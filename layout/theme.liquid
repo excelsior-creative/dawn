@@ -291,45 +291,53 @@
     </script>
 
     <script>
-      $('.featured-collection .product-grid').slick({
+      // $('.featured-collection .product-grid').slick({
+      //   dots: false,
+      //   infinite: false,
+      //   speed: 300,
+      //   slidesToShow: 1,
+      //   arrows: true,
+      //   prevArrow:'<button class="slick-arrow prev-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="16" viewBox="0 0 46 16" fill="none"><path d="M45 8H1" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 1L1 8L8 15" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button> ',
+      //   nextArrow:'<button class="slick-arrow next-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="16" viewBox="0 0 46 16" fill="none"><path d="M1 8H45" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 1L45 8L38 15" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button> '
         
-        arrows: true,
-        prevArrow:'<button class="slick-arrow prev-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="16" viewBox="0 0 46 16" fill="none"><path d="M45 8H1" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 1L1 8L8 15" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button> ',
-        nextArrow:'<button class="slick-arrow next-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="16" viewBox="0 0 46 16" fill="none"><path d="M1 8H45" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 1L45 8L38 15" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button> '
-        dots: true,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
+      // });
+
+
+      $('.featured-collection .product-grid').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
           }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ]
-      });
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
     </script>
     
   </body>
