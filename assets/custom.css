@@ -889,6 +889,10 @@ header .header__icons .header__icon--cart, header .header__icons .header__icon--
   max-width: 100%;
 }
 
+.slick-arrow.slick-disabled{
+  opacity: 0.8;
+}
+
 .customer_testimonial .testimonial_main span.icon{
   display: table;
   margin: 0 auto;
