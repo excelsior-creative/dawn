@@ -899,6 +899,11 @@ header .header__icons .header__icon--cart, header .header__icons .header__icon--
   margin: 0 auto;
 }
 
+body.collection .product-grid .grid__item {
+    width: calc(33% - 56.25px);
+    max-width: calc(33% - 56.25px);
+}
+
 .customer_testimonial .testimonial_main span.icon svg{
   float: left;
   width: 100%;
