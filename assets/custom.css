@@ -1956,7 +1956,11 @@ body.product section.page-width div.product div.product__media-wrapper .product_
 
   .collage__item--left:nth-child(3n), .collage__item--left:nth-child(3n) {
     grid-column-start: 1!important;
-}
+  }
+
+  .collage__item--left:nth-child(3n - 2):last-child {
+    grid-column-start: 2 !important;
+  }
 
   .header__heading-link{
     width: 200px;
