@@ -69,20 +69,20 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, body{
 }
 
 .collage{
-      grid-template-columns: repeat(4,minmax(0,1fr));
+      grid-template-columns: repeat(4,minmax(0,1fr)) !important;
 }
 
 .collage__item--left:nth-child(3n - 2) {
-    grid-column: 1 / span 1;
-    grid-row: span 1;
+    grid-column: 1 / span 1 !important;
+    grid-row: span 1 !important;
 }
 
 .collage__item--left:nth-child(3n - 1), .collage__item--left:nth-child(3n) {
-    grid-column-start: auto;
+    grid-column-start: auto !important;
 }
 
 left:nth-child(3n - 2):last-child {
-    grid-column: 1 / span 1;
+    grid-column: 1 / span 1 !important;
 }
 
 .main-hero-video .content_of_video.mobile{
