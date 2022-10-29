@@ -2349,6 +2349,10 @@ body.product section.page-width div.product div.product__media-wrapper .product_
     font-size: 32px!important;
     line-height: 38px;
   }
+
+  .featured-collection .collection__view-all{
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 568px){
