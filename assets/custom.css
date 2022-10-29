@@ -1950,6 +1950,14 @@ body.product section.page-width div.product div.product__media-wrapper .product_
     margin-left: 30px;
   }
 
+    .collage {
+    grid-template-columns: repeat(2,minmax(0,1fr))!important;
+  }
+
+  .collage__item--left:nth-child(3n), .collage__item--left:nth-child(3n) {
+    grid-column-start: 1!important;
+}
+
   .header__heading-link{
     width: 200px;
   }
@@ -2117,6 +2125,9 @@ body.product section.page-width div.product div.product__media-wrapper .product_
     gap: 10px 15px;
     justify-content: center;
   }
+
+
+  
   .shopify-section.product_tabs .grid.product-grid{
     margin-top: 30px;
   }
