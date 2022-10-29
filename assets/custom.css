@@ -876,6 +876,14 @@ header .header__icons .header__icon--cart, header .header__icons .header__icon--
   transform: translateY(-50%);
 }
 
+.featured-collection .product-grid .slick-arrow.prev-arrow{
+  left: -50px;
+}
+
+.featured-collection .product-grid .slick-arrow.next-arrow{
+  right: -50px;
+}
+
 .customer_testimonial .testimonial_main span.icon{
   display: table;
   margin: 0 auto;
