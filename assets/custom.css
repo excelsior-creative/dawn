@@ -1970,6 +1970,13 @@ body.product section.page-width div.product div.product__media-wrapper .product_
     width: 200px;
   }
 
+  body.collection .product-grid .grid__item {
+    width: calc(50% - 56.25px);
+    max-width: calc(50% - 56.25px);
+}
+
+  
+
   .header__heading-link svg{
     width: 185px;
   }
@@ -2296,6 +2303,11 @@ body.product section.page-width div.product div.product__media-wrapper .product_
     width: calc(50% - 15px);
     max-width: calc(50% - 15px);
   }
+
+  body.collection .product-grid .grid__item {
+    width: 100%;
+    max-width: 100%;
+}
 
   .main-hero-video .content_of_video{
     display: none;
