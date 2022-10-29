@@ -123,7 +123,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Group_17_cbb8fc26-b754-48b9-bdd7-6ae88328f4c6.png",
             "collection_text": "Accessories",
-            "collection_link": "",
+            "collection_link": "#",
             "image_padding": false
           }
         }
