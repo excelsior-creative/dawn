@@ -85,6 +85,11 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5, body{
     grid-column-start: 3 !important;
 }
 
+.collage__item--left:nth-child(3n - 2):last-child{
+      grid-column: 1 / span 1 !important;
+    grid-column-start: 4 !important;
+}
+
 left:nth-child(3n - 2):last-child {
     grid-column: 1 / span 1 !important;
 }
