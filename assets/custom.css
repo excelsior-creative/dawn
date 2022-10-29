@@ -890,7 +890,8 @@ header .header__icons .header__icon--cart, header .header__icons .header__icon--
 }
 
 .slick-arrow.slick-disabled{
-  opacity: 0.8;
+  opacity: 0.6;
+  cursor: disabled;
 }
 
 .customer_testimonial .testimonial_main span.icon{
