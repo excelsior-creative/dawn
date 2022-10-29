@@ -2130,7 +2130,9 @@ body.product section.page-width div.product div.product__media-wrapper .product_
     justify-content: center;
   }
 
-
+  .featured-collection{
+    padding-bottom: 50px;
+  }
   
   .shopify-section.product_tabs .grid.product-grid{
     margin-top: 30px;
