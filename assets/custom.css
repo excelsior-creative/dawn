@@ -877,11 +877,15 @@ header .header__icons .header__icon--cart, header .header__icons .header__icon--
 }
 
 .featured-collection .product-grid .slick-arrow.prev-arrow{
-  left: -50px;
+  left: -70px;
 }
 
 .featured-collection .product-grid .slick-arrow.next-arrow{
-  right: -50px;
+  right: -70px;
+}
+
+.featured-collection .product-grid .grid__item{
+  padding: 0 10px;
 }
 
 .customer_testimonial .testimonial_main span.icon{
