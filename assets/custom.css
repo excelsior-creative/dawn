@@ -2232,6 +2232,10 @@ body.product section.page-width div.product div.product__media-wrapper .product_
     transform: translateY(-50%);
   }
 
+  footer.footer .footer__content-top .footer__blocks-wrapper .footer-block.grid__item.footer-block--menu{
+    width: 100%;
+  }
+
   .header-wrapper .header{
     padding: 15px 2.5rem;
   }
