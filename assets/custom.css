@@ -886,6 +886,7 @@ header .header__icons .header__icon--cart, header .header__icons .header__icon--
 
 .featured-collection .product-grid .grid__item{
   padding: 0 10px;
+  max-width: 100%;
 }
 
 .customer_testimonial .testimonial_main span.icon{
