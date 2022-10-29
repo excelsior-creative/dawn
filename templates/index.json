@@ -95,7 +95,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Mask_group_3.png",
-            "collection_text": "Lorem Ipsum",
+            "collection_text": "For Men",
             "collection_link": "#",
             "image_padding": false
           }
@@ -104,7 +104,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Mask_group_2.png",
-            "collection_text": "Lorem Ipsum",
+            "collection_text": "For Women",
             "collection_link": "#",
             "image_padding": false
           }
@@ -113,8 +113,17 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/7_1.png",
-            "collection_text": "Lorem Ipsum",
+            "collection_text": "For Couples",
             "collection_link": "#",
+            "image_padding": false
+          }
+        },
+        "cc897807-a9c0-4ef6-90fe-46aa546fca1b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_17_cbb8fc26-b754-48b9-bdd7-6ae88328f4c6.png",
+            "collection_text": "Accessories",
+            "collection_link": "",
             "image_padding": false
           }
         }
@@ -122,7 +131,8 @@
       "block_order": [
         "54dc933d-ba7a-45cf-b2d1-253d004fd236",
         "a6f56c12-0634-4567-9a67-a7078d54e2c0",
-        "d16c6af0-ac16-4342-91df-fe646b56c971"
+        "d16c6af0-ac16-4342-91df-fe646b56c971",
+        "cc897807-a9c0-4ef6-90fe-46aa546fca1b"
       ],
       "settings": {
         "heading": "",
