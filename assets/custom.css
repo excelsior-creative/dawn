@@ -2232,11 +2232,6 @@ body.product section.page-width div.product div.product__media-wrapper .product_
     transform: translateY(-50%);
   }
 
-  footer.footer .footer__content-top .footer__blocks-wrapper .footer-block.grid__item.footer-block--menu{
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
   .header-wrapper .header{
     padding: 15px 2.5rem;
   }
@@ -2273,8 +2268,8 @@ body.product section.page-width div.product div.product__media-wrapper .product_
     justify-content: center;
 }
   footer.footer .footer__content-top .footer__blocks-wrapper .footer-block.grid__item.footer-block--menu{
-    width: 50% !important;
-    max-width: 50% !important;
+    width: 100% !important;
+    max-width: 100% !important;
     float: left;
     margin: 10px 0 !important;
   }
