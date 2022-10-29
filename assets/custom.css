@@ -904,6 +904,10 @@ body.collection .product-grid .grid__item {
     max-width: calc(33% - 56.25px);
 }
 
+body.collection .facets-vertical-form{
+  margin-bottom: 30px;
+}
+
 .customer_testimonial .testimonial_main span.icon svg{
   float: left;
   width: 100%;
